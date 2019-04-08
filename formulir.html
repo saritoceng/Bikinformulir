@@ -18,35 +18,26 @@
         <p>Pembayaran untuk masing masing tagihan harus dilakukan secara terpisah</p>
     </div>
     <div>
-        <form action=" formulir.html" method="get">
+        <form action=" formulir.php" method="post">
             <div>
-                Nama: <input type="text" />
+                Nama: <input type="text" name="nama" placeholder="nama anda" />
             </div>
+            <div>
+                NPM atau Nomor Pendaftaran: <input type="text" name="NPM" />
+            </div>
+            <div>
+                Jurusan:
+                <select name="Jurusan">
+                    <option value="Teknik Sipil">Teknik Sipil</option>
+                    <option value="Teknik Elektro">Teknk Elektro</option>
+                </select>
+            </div>
+            <div>Rekening atas nama: <input type="text" name="rekening"/> </div>
+            <div>
+                Nomor Tlp atau HP: <input type="text" name="telp" /> 
+            </div>
+                
 
-            <div>
-                Jurusan: <input type="radio" Name="Jurusan" value="Teknik Sipil" checked /> Teknik Sipil
-                <input type="radio" Name="Jurusan" value="Teknik Elektro" checked /> Teknik Elektro
-                <input type="radio" Name="Jurusan" value="Sistem Informasi" checked /> Sistem Informasi
-                <input type="radio" Name="Jurusan" value="Teknik Informasi" checked /> Teknik Informasi
-                <input type="radio" Name="Jurusan" value="Manajemen" checked /> Manajemen
-                <input type="radio" Name="Jurusan" value="Akuntansi" checked /> Akuntansi
-                <input type="radio" Name="Jurusan" value="Pariwisata" checked /> Pariwisata
-                <input type="radio" Name="Jurusan" value="Ilmu Hukum" checked /> Ilmu Hukum
-                <input type="radio" Name="Jurusan" value="Magister Manajemen" checked /> Magister Manajemen
-                <input type="radio" Name="Jurusan" value="Magister Hukum" checked /> Magister Hukum
-                <input type="radio" Name="Jurusan" value="Umum" checked /> Umum
-            </div>
-            <div>
-                NPM atau Nomor Pendaftaran: <input type="text" />
-            </div>
-            <div>Rekening atas nama: <input type="text" /> </div>
-            <div>Transfer dari Bank: <input type="text" /> </div>
-            <div>
-                Nomor Tlp atau HP: <input type="text" />
-            </div>
-<div></div>
-
-    </div>
-</body>
-
+    </div> 
+</body> 
 </html>
