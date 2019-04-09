@@ -9,6 +9,7 @@
 </head>
 
 <body>
+
     <style>
         .container {
             display: flex;
@@ -23,7 +24,6 @@
             padding-right: 1em;
             border: 1px solid #CCC;
             border-radius: 1em;
-            =
         }
 
         form div+div {
@@ -32,102 +32,116 @@
 
         input,
         select {
-            display: inline-block;
-            width: 100px;
-            text-align: left;
+            width: 90%;
+            padding: 16px 20px;
+            border: none;
+            border-radius: 3px;
+            background-color: #aacaff
+        }
+
+        input[type=button],
+        input[type=submit],
+            {
+            border: blue;
+            color: black;
+            padding: 16px 32px;
+            margin: px 2px;
+            cursor: pointer;
+        }
     </style>
     <form>
-        <div>
-            <img src="./uib-logo.png">
+        <form action="formulir.html" method="post">
+            <div>
+                <img src="./uib-logo.png">
 
-            <h1>KONFIRMASI PEMBAYARAN
-                <style types="text/css">
-                    h1 {
-                        color: blue;
-                        font-weight: bold;
-                    }
-                </style>
-            </h1>
-        </div>
-        <div>
-            <div>Terima kasih</div>
-            <div>Bila Anda telah melakukan pembayaran secara Bank Transfer, konfirmasi pembayaran Anda di sini agar
-                dapat kami
-                proses segera</div>
-            <div> Harap Diperhatikan </div>
-            <div>Pembayaran untuk masing masing tagihan harus dilakukan secara terpisah</div>
-        </div>
-        <div>
-            <form action="formulir.html" method="post">
-                <div>
-                    Nama: <input type="text" name="nama" />
-                </div>
-                <div>
-                    NPM atau Nomor Pendaftaran: <input type="text" name="NPM" />
-                </div>
-                <div>
-                    Jurusan:
-                    <select name="Jurusan">
-                        <option value="Teknik Sipil">Teknik Sipil</option>
-                        <option value="Teknik Elektro">Teknk Elektro</option>
-                        <option value="Sistem Informasi">Sistem Informasi</option>
-                        <option value="Teknologi Informasi">Teknologi Informasi</option>
-                        <option value="Manajemen">Manajemen</option>
-                        <option value="Akuntansi">Akuntansi</option>
-                        <option value="Pariwisata">Pariwisata</option>
-                        <option value="Ilmu Hukum">Ilmu Hukum</option>
-                        <option value="Pendidikan Bahasa Inggris">Pendidikan Bahasa Inggris</option>
-                        <option value="Magister Manajemen">Magister Manajemen</option>
-                        <option value="Magister Ilmu Hukum">Magister Ilmu Hukum</option>
-                        <option value="Lainnya">Lainnya</option>
-                    </select>
-                </div>
-                <div>
-                    Jenis Pembayaran:
-                    <select name="Jenis Pembayaran">
-                        <option value="ACCA">ACCA</option>
-                        <option value="ACCA Remedial">ACCA Remedial</option>
-                        <option value="Bevet Pajak">Brevet Pajak</option>
-                        <option value="CISMA">CISMA</option>
-                        <option value="CFMA">CFMA</option>
-                        <option value="CISCO">CISCO</option>
-                        <option value="MTCNA">MTCNA</option>
-                        <option value="DAF">DAF</option>
-                        <option value="SDF">SDF</option>
-                        <option value="ACA Photosop">ACA Photoshop</option>
-                        <option value="HTML5">HTML5</option>
-                        <option value="PMA">PMA</option>
-                        <option value="CRM">CRM</option>
-                        <option value="Six Sigma">Six Sigma</option>
-                        <option value="TOEFL ITP">TOEFL ITP</option>
-                        <option value="PKPA">PKPA</option>
-                        <option value="Lainnya">Lainnya</option>
-                    </select>
+                <h1>KONFIRMASI PEMBAYARAN
+                    <style types="text/css">
+                        h1 {
+                            color: blue;
+                            font-weight: bold;
+                        }
+                    </style>
+                </h1>
+            </div>
+            <div>
+                <div>Terima kasih</div>
+                <div>Bila Anda telah melakukan pembayaran secara Bank Transfer, konfirmasi pembayaran Anda di sini agar
+                    dapat kami
+                    proses segera</div>
+                <div> Harap Diperhatikan </div>
+                <div>Pembayaran untuk masing masing tagihan harus dilakukan secara terpisah</div>
+            </div>
+            <div>
+                <div class="row">
                     <div>
-                        Lainnya: <input type="text" />
+                        Nama: <input type="text" name="nama" />
+                    </div>
+                    <div>
+                        NPM atau Nomor Pendaftaran: <input type="text" name="NPM" />
+                    </div>
+                    <div>
+                        Jurusan:
+                        <select name="Jurusan">
+                            <option value="Teknik Sipil">Teknik Sipil</option>
+                            <option value="Teknik Elektro">Teknk Elektro</option>
+                            <option value="Sistem Informasi">Sistem Informasi</option>
+                            <option value="Teknologi Informasi">Teknologi Informasi</option>
+                            <option value="Manajemen">Manajemen</option>
+                            <option value="Akuntansi">Akuntansi</option>
+                            <option value="Pariwisata">Pariwisata</option>
+                            <option value="Ilmu Hukum">Ilmu Hukum</option>
+                            <option value="Pendidikan Bahasa Inggris">Pendidikan Bahasa Inggris</option>
+                            <option value="Magister Manajemen">Magister Manajemen</option>
+                            <option value="Magister Ilmu Hukum">Magister Ilmu Hukum</option>
+                            <option value="Lainnya">Lainnya</option>
+                        </select>
+                    </div>
+                    <div>
+                        Jenis Pembayaran:
+                        <select name="Jenis Pembayaran">
+                            <option value="ACCA">ACCA</option>
+                            <option value="ACCA Remedial">ACCA Remedial</option>
+                            <option value="Bevet Pajak">Brevet Pajak</option>
+                            <option value="CISMA">CISMA</option>
+                            <option value="CFMA">CFMA</option>
+                            <option value="CISCO">CISCO</option>
+                            <option value="MTCNA">MTCNA</option>
+                            <option value="DAF">DAF</option>
+                            <option value="SDF">SDF</option>
+                            <option value="ACA Photosop">ACA Photoshop</option>
+                            <option value="HTML5">HTML5</option>
+                            <option value="PMA">PMA</option>
+                            <option value="CRM">CRM</option>
+                            <option value="Six Sigma">Six Sigma</option>
+                            <option value="TOEFL ITP">TOEFL ITP</option>
+                            <option value="PKPA">PKPA</option>
+                            <option value="Lainnya">Lainnya</option>
+                        </select>
+                        <div>
+                            Lainnya: <input type="text" />
+                        </div>
+                    </div>
+                    <div>
+                        Transfer dari Bank <input type="text" />
+                    </div>
+                    <div>Dari rekening atas nama: <input type="text" name="rekening" /> </div>
+                    <div>
+                        Nomor Tlp atau HP: <input type="text" name="telp" />
+                    </div>
+                    <div> Email <input type="text" name="email" />
+
+                    </div>
+                    <div>
+                        <input type="Bukti Transfer" value="Upload bukti transfer" />
+                        <input type="submit" value="Upload">
+                    </div>
+                    <div>
+                        <input type="submit" value="Konfirmasi Pembayaran">
+
                     </div>
                 </div>
-                <div>
-                    Transfer dari Bank <input type="text" />
-                </div>
-                <div>Dari rekening atas nama: <input type="text" name="rekening" /> </div>
-                <div>
-                    Nomor Tlp atau HP: <input type="text" name="telp" />
-                </div>
-                <div> Email <input type="text" name="email" />
-
-                </div>
-                <div>
-                    <input type="Bukti Transfer" value="Upload bukti transfer" />
-                    <input type="submit" value="Upload">
-                </div>
-                <div>
-                    <input type="submit" value="Konfirmasi Pembayaran">
-
-                </div>
+        </form>
         </div>
-    </form>
-    </div>
 </body>
 
 </html>
