@@ -1,3 +1,121 @@
+<style>
+body,
+input,
+textarea,
+select {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #4c4c4c;
+}
+
+p {
+    font-size: 12px;
+    width: 150px;
+    display: inline-block;
+    margin-left: 18px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 300;
+    color: #4c4c4c;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+html {
+    background-color: #8cbdea;
+}
+
+
+input[type=radio] {
+    visibility: visible;
+    margin-right:
+}
+
+form {
+    margin: 0 300px;
+}
+
+div {
+    margin: 10px
+}
+
+label.select {
+    cursor: pointer;
+    text-indent: 35px;
+    overflow: visible;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+input[type=select]:checked+label:after {
+    opacity: 1;
+}
+
+input[type=text],
+input[type=password] {
+    width: 200px;
+    height: 39px;
+    -webkit-border-radius: 0px 4px 4px 0px/5px 5px 4px 4px;
+    -moz-border-radius: 0px 4px 4px 0px/0px 0px 4px 4px;
+    border-radius: 0px 4px 4px 0px/5px 5px 4px 4px;
+    background-color: #fff;
+    -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, .09);
+    -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, .09);
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, .09);
+    border: solid 1px #cbc9c9;
+    margin-left: -5px;
+    margin-top: 13px;
+    padding-left: 10px;
+}
+
+input[type=nama] {
+    margin-right: 25px;
+}
+
+
+.Jurusan {
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.accounttype {
+    margin-left: 8px;
+    margin-top: 20px;
+}
+
+.inputtype {
+    margin-right: 8px
+}
+
+a.button {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    padding: 6px 25px 0px 20px;
+    margin: 10px 8px 20px 0px;
+    display: inline-block;
+    float: right;
+    text-decoration: none;
+    width: 50px;
+    height: 27px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #3a57af;
+    -webkit-box-shadow: 0 3px rgba(58, 87, 175, .75);
+    -moz-box-shadow: 0 3px rgba(58, 87, 175, .75);
+    box-shadow: 0 3px rgba(58, 87, 175, .75);
+    transition: all 0.1s linear 0s;
+    top: 0px;
+    position: relative;
+}
+</style>
+
+
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, 
 pre, form, fieldset, input, textarea, p, blockquote, th, td { 
   padding:0;
@@ -176,7 +294,7 @@ a.button {
   position: relative;
 }
 
-a.button:hover {
+a.submit.Jurusan {
   top: 3px;
   background-color:#2e458b;
   -webkit-box-shadow: none; 
