@@ -13,6 +13,7 @@ p {
     width: 150px;
     display: inline-block;
     margin-left: 18px;
+    font-style: italic;
 }
 
 h1 {
